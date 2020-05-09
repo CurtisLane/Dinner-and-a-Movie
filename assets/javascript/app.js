@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 $( document ).ready(function() {
     console.log( "ready!" );
 
@@ -25,4 +23,3 @@ $( document ).ready(function() {
     })
 
 });
->>>>>>> Stashed changes

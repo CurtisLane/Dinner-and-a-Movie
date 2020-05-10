@@ -5,7 +5,8 @@ $(document).ready(function() {
     let dropdownRight;
 
     let q = 'minecraft' // This will be set to the search input value on click
-
+    let limit;
+    
     const yt_api_key = 'AIzaSyDYbQo18NZbT_zT_wAfv3BjU1o1ziUWMRs'; // Api key from youtube
     const redditPublicKey = 'NOoIuGKYf3u77g'
     const redditSecretKey = 'Gr-4X_j_oawud4UJL8lyHyA8mPc'
@@ -18,12 +19,12 @@ $(document).ready(function() {
     let reddit_url = ''
 
     // Wikipedia URL
-    /w/api.php?action=query&format=json
+    let wiki_url = 'https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=' + q + '&format=json&origin=*'
     
     // Ajax function to test the query urls
 
     $.ajax({
-        url: yt_url,
+        url: wiki_url, // Currently testing Wikipedia URL
         method: "GET"
     }).then(function (response) {
 

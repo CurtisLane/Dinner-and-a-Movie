@@ -1,0 +1,33 @@
+#headertext {
+    text-align: center;
+}
+
+.container {
+    margin-bottom: 100px;
+   
+}
+
+.form-group {
+    padding: 120px;
+    margin-top: 280px;
+  
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.dropdown {
+    padding: 10px;
+    
+    
+}
+
+body {
+    background-image: url("../Images/double-bubble.png");
+}
+
+#alignment {
+    margin-left: 220px;
+}

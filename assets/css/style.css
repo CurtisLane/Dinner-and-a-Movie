@@ -1,31 +1,27 @@
-#headertext {
-    text-align: center;
-}
-
-.container {
-    margin-bottom: 100px;
-   
-}
-
-.form-group {
-    padding: 120px;
-    margin-top: 280px;
-  
-    
+body {
+    background-image: url("../Images/double-bubble-dark.png");
 }
 
 h1 {
     text-align: center;
 }
 
-.dropdown {
-    padding: 10px;
-    
-    
+#headertext {
+    text-align: center;
 }
 
-body {
-    background-image: url("../Images/double-bubble.png");
+
+.container {
+    margin-bottom: 100px; 
+}
+
+.form-group {
+    padding: 120px;
+    margin-top: 420px;   
+}
+
+.dropdown {
+    padding: 10px;      
 }
 
 #alignment {

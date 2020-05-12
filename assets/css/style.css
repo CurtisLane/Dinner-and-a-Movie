@@ -32,3 +32,9 @@ h1 {
     margin-left: -35px;
     margin-top: -10px;
 }
+
+.results {
+    color: white;
+    text-align: center;
+    margin: -60px;
+}

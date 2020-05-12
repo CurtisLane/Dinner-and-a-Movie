@@ -27,3 +27,8 @@ h1 {
 #alignment {
     margin-left: 220px;
 }
+
+#searchButton {
+    margin-left: -35px;
+    margin-top: -10px;
+}

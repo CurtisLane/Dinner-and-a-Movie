@@ -1,0 +1,34 @@
+body {
+    background-image: url("../Images/double-bubble-dark.png");
+}
+
+h1 {
+    text-align: center;
+}
+
+#headertext {
+    text-align: center;
+}
+
+
+.container {
+    margin-bottom: 100px; 
+}
+
+.form-group {
+    padding: 120px;
+    margin-top: 420px;   
+}
+
+.dropdown {
+    padding: 10px;      
+}
+
+#alignment {
+    margin-left: 220px;
+}
+
+#searchButton {
+    margin-left: -35px;
+    margin-top: -10px;
+}

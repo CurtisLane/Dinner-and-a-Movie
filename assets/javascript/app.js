@@ -1,34 +1,32 @@
 $(document).ready(function() {
+    console.log('Ready!')
 
-    // These will be set to equal whichever api url is chosen by the user in the first and second drop down menus
-    let dropdownLeft;
-    let dropdownRight;
+    // Edamam API for recipe lookup
+    const app_id = 'bfdf4f3e'
+    const app_key = 'd3d66f2575260072a0894f4e9797d55a'
+    let q = 'chicken thigh' // Will contain search input from idex.html
+    
+    let edamam_URL = 'https://api.edamam.com/search?q=' + q + '&app_id='+ app_id +'&app_key='+ app_key
+    
+    // ajax query for Edamam API
+    $.ajax({
+        url: edamam_URL,
+        method: 'GET'
+    }).then(function(response){
+        console.log(response)
+    })
 
-    let q = 'minecraft' // This will be set to the search input value on click
-    let limit;
+    // The Movie DB(database) API for movie lookup by collection
+    let dayOrWeek = 'day' // Will be chosen by user via drop-down menu
+    const tmdb_api_key = 'b673088700e4fa8381c8b35441340dea'
+    let tmdb_URL = 'https://api.themoviedb.org/3/trending/movie/' + dayOrWeek + '?api_key=' + tmdb_api_key
     
-    const yt_api_key = 'AIzaSyDYbQo18NZbT_zT_wAfv3BjU1o1ziUWMRs'; // Api key from youtube
-    const redditPublicKey = 'NOoIuGKYf3u77g'
-    const redditSecretKey = 'Gr-4X_j_oawud4UJL8lyHyA8mPc'
-    
-
-    // Search URL from YouTube API
-    let yt_url = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q=' + q + '&key=' + yt_api_key;
-    
-    // Reddit URL
-    let reddit_url = ''
-
-    // Wikipedia URL
-    let wiki_url = 'https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=' + q + '&format=json&origin=*'
-    
-    // Ajax function to test the query urls
 
     $.ajax({
-        url: wiki_url, // Currently testing Wikipedia URL
-        method: "GET"
-    }).then(function (response) {
-
-        console.log(response);
-    }); // *Close ajax .then function
+        url: tmdb_URL,
+        method: 'GET'
+    }).then(function(response){
+        console.log(response)
+    })
 
 }); // *Close document ready function

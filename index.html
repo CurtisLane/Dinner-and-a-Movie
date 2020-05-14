@@ -1,37 +1,40 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
- <!--Favicon-->
-    <link rel="shortcut icon" href="/favicon2.ico" type="image/x-icon">
-    <link rel="icon" href="assets/Images/favicon2.ico" type="image/x-icon">
 
-
+    <!--Favicon-->
+    <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
 
     <title>Dinner and a Movie!</title>
+
   </head>
   <body>
+
     <!-- Header -->
     <div class="container">
       <div class="card bg-dark text-white">
-        <img src="assets/Images/Dinner+&+Movie.jpg" class="card-img" alt="...">
-        <div class="card-img-overlay" id="headertext">      
-          <div class="form-group row mt-3" id="alignment">
+        <img src="assets/Images/Dinner+&+Movie.jpg" class="card-img" alt="Dinner and a Movie">
+        <div class="card-img-overlay position-relative" id="headertext">      
+          <div class="form-group row mt-4" id="alignment">
             
             <!-- Empty column for spacing -->
-            <div class="col-1"></div> 
+            <div class="col-1 col-sm-1 col-md-2 col-lg-2"></div> 
               
             <!-- column contains search input -->
-            <div class="col-6">
+            <div class="col-5">
 
                 <!-- Search input field -->
-                <input type="text" class="form-control" id="searchInput" placeholder="Search" autocomplete="off"> 
+                <input type="text" class="form-control" id="searchInput" placeholder="Search For Recipes" autocomplete="off"> 
             </div>
             
             <!-- column contains dropdown menu and search button -->
@@ -40,8 +43,8 @@
               <!-- Trending Movies dropdown menu -->
               <div class="dropdown">
 
-                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Top Trending Movies
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Trending Movies
                 </button>
 
                 <!-- Trending Movies dropdown menu options -->
@@ -51,7 +54,7 @@
                 </div>   
 
                 <!-- search button -->
-                <button type="button" class="btn btn-dark" id="searchButton">
+                <button type="button" class="btn btn-secondary" id="searchButton">
                   Search
                 </button>
 

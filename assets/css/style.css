@@ -2,6 +2,9 @@ body {
     background-image: url("../Images/double-bubble-dark.png");
 }
 
+.dropdown-item:hover {
+    background-color: tomato;
+}
 
 
 

@@ -1,6 +1,9 @@
 $(document).ready(function() {
     console.log('Ready!')
 
+    let leftCol = $('#leftCol')
+    let rightCol = $('#rightCol')
+
     // Define dayOrWeek based on user choice from dropdown
     let dayOrWeek;
     $('.dropdown-item').on('click', function(){
@@ -9,6 +12,9 @@ $(document).ready(function() {
 
     // Listen for click on search button
     $('#searchButton').on('click', function(){
+
+        leftCol.empty()
+        rightCol.empty()
 
         // Edamam API for recipe lookup
         const app_id = 'bfdf4f3e'
@@ -22,18 +28,39 @@ $(document).ready(function() {
             method: 'GET'
         }).then(function(response){
             console.log(response)
+
+            let results = response.hits
+            for (i=0; i<results.length; i++) {
+                let recipeDiv = $('<div>')
+                let recipeImg = $('<img>')
+                recipeImg.attr('src', results[i].recipe.image)
+                recipeImg.addClass('img-fluid')
+                recipeDiv.append(recipeImg)
+                leftCol.append(recipeDiv)
+
+            }
         })
 
         // The Movie DB(database) API for movie lookup by collection
         const tmdb_api_key = 'b673088700e4fa8381c8b35441340dea'
         let tmdb_URL = 'https://api.themoviedb.org/3/trending/movie/' + dayOrWeek + '?api_key=' + tmdb_api_key
-
+        let tmdb_img_base_URL = 'https://image.tmdb.org/t/p/w500'
         // ajax query for TmDB
         $.ajax({
             url: tmdb_URL,
             method: 'GET'
         }).then(function(response){
             console.log(response)
+
+            let results = response.results
+            for (i = 0; i<10; i++) {
+                let movieDiv = $('<div>')
+                let movieImg = $('<img>')
+                movieImg.attr('src', tmdb_img_base_URL + results[i].poster_path)
+                movieImg.addClass('img-fluid')
+                movieDiv.append(movieImg)
+                rightCol.append(movieDiv)
+            }
         })
 
     }) // *Close search button click listener

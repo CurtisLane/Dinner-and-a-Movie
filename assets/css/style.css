@@ -1,5 +1,17 @@
+@font-face {
+    font-family: punisment;
+    src: url(../fonts/punishment);
+  }
+
+  h1 {
+    font-family: punishment;
+    text-shadow: 2px 2px #1f1c1c;
+    letter-spacing: 2px;
+    font-size: 5rem;
+  }
+
 body {
-    background-image: url("../Images/double-bubble-dark.png");
+    background-image: url("../images/double-bubble-dark.png");
 }
 
 .dropdown-item:hover {
@@ -11,6 +23,6 @@ body {
 }
 
 #title {
-    bottom: 7rem;
+    bottom: 8rem;
 }
 

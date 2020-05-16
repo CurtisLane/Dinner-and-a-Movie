@@ -7,7 +7,7 @@
     font-family: punishment;
     text-shadow: 2px 2px #1f1c1c;
     letter-spacing: 2px;
-    
+    font-size: 5rem;
   }
 
 body {
@@ -23,6 +23,6 @@ body {
 }
 
 #title {
-    bottom: 7rem;
+    bottom: 8rem;
 }
 

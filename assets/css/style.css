@@ -1,19 +1,30 @@
+/* -----Link downloaded font----- */
 @font-face {
     font-family: punishment;
     src: url("../fonts/punishment-font/Punishment-DPwE.ttf");
   }
 
-  h1 {
+/* -----Style elements----- */
+body {
+    /* background-image: url("../Images/double-bubble-dark.png"); */
+    background-color: black;
+}
+
+h1 {
     font-family: punishment;
     text-shadow: 2px 2px #1f1c1c;
     letter-spacing: 2px;
     font-size: 5rem;
-  }
-
-body {
-    background-image: url("../Images/double-bubble-dark.png");
 }
 
+p {
+    font-family: punishment;
+    font-size: 2rem;
+    text-shadow: 2px 2px #1f1c1c;
+    letter-spacing: 2px;
+}
+
+/* -----Style classes----- */
 .dropdown-item:hover {
     background-color: tomato;
 }
@@ -22,7 +33,16 @@ body {
     opacity: .5;
 }
 
+.recipe_img {
+    width: 100%;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+/* -----Style id's----- */
 #title {
     bottom: 8rem;
 }
-

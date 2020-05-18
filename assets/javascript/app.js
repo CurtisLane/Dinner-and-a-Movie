@@ -36,9 +36,9 @@ $(document).ready(function() {
                 let recipeLink = $('<a>')
                 let recipeImg = $('<img>')
                 let recipeP = $('<p>')
-                recipeP.addClass('pt-4 text-light')
+                recipeP.addClass('pt-3 text-light')
                 recipeP.text(results[i].recipe.label)
-                recipeDiv.addClass('mt-4 p-3 bg-dark rounded')
+                recipeDiv.addClass('mt-4 px-3 pt-3 bg-dark rounded')
                 recipeLink.attr('href', results[i].recipe.url) // Needs URL from api
                 recipeLink.attr('target', '_blank')
                 recipeImg.attr('src', results[i].recipe.image)

@@ -32,10 +32,14 @@ $(document).ready(function() {
             let results = response.hits
             for (i=0; i<results.length; i++) {
                 let recipeDiv = $('<div>')
+                let recipeLink = $('<a>')
                 let recipeImg = $('<img>')
+                recipeLink.attr('href', results[i].recipe.url) // Needs URL from api
+                recipeLink.attr('target', '_blank')
                 recipeImg.attr('src', results[i].recipe.image)
                 recipeImg.addClass('img-fluid')
-                recipeDiv.append(recipeImg)
+                recipeLink.append(recipeImg)
+                recipeDiv.append(recipeLink)
                 leftCol.append(recipeDiv)
 
             }
@@ -55,10 +59,14 @@ $(document).ready(function() {
             let results = response.results
             for (i = 0; i<10; i++) {
                 let movieDiv = $('<div>')
+                let movieLink = $('<a>')
                 let movieImg = $('<img>')
+                movieLink.attr('href', 'http://www.google.com/search?q=' + results[i].title) // Needs url to google search movie title from api
+                movieLink.attr('target', '_blank')
                 movieImg.attr('src', tmdb_img_base_URL + results[i].poster_path)
                 movieImg.addClass('img-fluid')
-                movieDiv.append(movieImg)
+                movieLink.append(movieImg)
+                movieDiv.append(movieLink)
                 rightCol.append(movieDiv)
             }
         })

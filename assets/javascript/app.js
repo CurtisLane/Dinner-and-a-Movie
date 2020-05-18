@@ -11,7 +11,8 @@ $(document).ready(function() {
     })
 
     // Listen for click on search button
-    $('#searchButton').on('click', function(){
+    $('#searchButton').on('click', function(event){
+        event.preventDefault()
 
         leftCol.empty()
         rightCol.empty()
@@ -34,12 +35,16 @@ $(document).ready(function() {
                 let recipeDiv = $('<div>')
                 let recipeLink = $('<a>')
                 let recipeImg = $('<img>')
+                let recipeP = $('<p>')
+                recipeP.addClass('pt-4 text-light')
+                recipeP.text(results[i].recipe.label)
+                recipeDiv.addClass('mt-4 p-3 bg-dark rounded')
                 recipeLink.attr('href', results[i].recipe.url) // Needs URL from api
                 recipeLink.attr('target', '_blank')
                 recipeImg.attr('src', results[i].recipe.image)
-                recipeImg.addClass('img-fluid')
+                recipeImg.addClass('img-fluid rounded recipe_img')
                 recipeLink.append(recipeImg)
-                recipeDiv.append(recipeLink)
+                recipeDiv.append(recipeLink, recipeP)
                 leftCol.append(recipeDiv)
 
             }
@@ -61,10 +66,11 @@ $(document).ready(function() {
                 let movieDiv = $('<div>')
                 let movieLink = $('<a>')
                 let movieImg = $('<img>')
+                movieDiv.addClass('bg-dark mt-4 rounded')
                 movieLink.attr('href', 'http://www.google.com/search?q=' + results[i].title) // Needs url to google search movie title from api
                 movieLink.attr('target', '_blank')
                 movieImg.attr('src', tmdb_img_base_URL + results[i].poster_path)
-                movieImg.addClass('img-fluid')
+                movieImg.addClass('img-fluid rounded py-3')
                 movieLink.append(movieImg)
                 movieDiv.append(movieLink)
                 rightCol.append(movieDiv)

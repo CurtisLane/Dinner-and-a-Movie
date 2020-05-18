@@ -24,6 +24,10 @@ p {
     letter-spacing: 2px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /* -----Style classes----- */
 .dropdown-item:hover {
     background-color: tomato;

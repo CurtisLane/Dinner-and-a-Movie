@@ -17,6 +17,17 @@ h1 {
     font-size: 5rem;
 }
 
+p {
+    font-family: punishment;
+    font-size: 2rem;
+    text-shadow: 2px 2px #1f1c1c;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /* -----Style classes----- */
 .dropdown-item:hover {
     background-color: tomato;

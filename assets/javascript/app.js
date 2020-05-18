@@ -43,8 +43,8 @@ $(document).ready(function() {
                 recipeLink.attr('target', '_blank')
                 recipeImg.attr('src', results[i].recipe.image)
                 recipeImg.addClass('img-fluid rounded recipe_img')
-                recipeLink.append(recipeImg)
-                recipeDiv.append(recipeLink, recipeP)
+                recipeLink.append(recipeImg, recipeP)
+                recipeDiv.append(recipeLink)
                 leftCol.append(recipeDiv)
 
             }

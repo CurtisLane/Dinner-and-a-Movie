@@ -1,10 +1,12 @@
 /* -----Link downloaded font----- */
+
 @font-face {
     font-family: punishment;
     src: url("../fonts/punishment-font/Punishment-DPwE.ttf");
-  }
+}
 
 /* -----Style elements----- */
+
 body {
     /* background-image: url("../Images/double-bubble-dark.png"); */
     background-color: black;
@@ -29,12 +31,9 @@ a:hover {
 }
 
 /* -----Style classes----- */
+
 .dropdown-item:hover {
     background-color: tomato;
-}
-
-.char1:hover {
-    opacity: .5;
 }
 
 .recipe_img {
@@ -46,30 +45,44 @@ a:hover {
     box-shadow: none;
   }
 
+/* -----Lettering.js Animations----- */
+
+.char1:hover, .char2:hover, .char3:hover, .char4:hover, .char5:hover, .char6:hover, .char7:hover, .char8:hover, .char9:hover, .char10:hover, .char11:hover, .char12:hover, .char13:hover, .char14:hover, .char15:hover, .char16:hover, .char17:hover, .char18:hover  {
+    opacity: .6;
+    color: black;
+    font-size: 90%;
+    cursor: url('../Cursor/icons8-protection-mask-100.png'), auto; /*Cursor download from https://icons8.com/icons/set/mask*/
+}
+
 /* -----Style id's----- */
+
 #title {
     bottom: 8rem;
     margin-bottom: -4.5rem;
 }
-/* -----Style queries----- */
+
+/* -----Media queries----- */
 
 @media screen and (min-width:768px) and (max-width:991px) {
     h1 {
         font-size: 3.5rem;   
     }
+
     p {
         font-size: 1.5rem;
         margin-top: 2rem;
     }
+
     #title {
         bottom: 5.25rem;
     } 
-
 }
+
 @media screen and (min-width:640px) and (max-width:767px) {
     h1 {
         font-size: 3rem;   
     }
+
     p {
         font-size: 1.5rem;
         margin-top: 2rem;
@@ -80,19 +93,17 @@ a:hover {
     } 
 }
 
-
-
 @media screen and (max-width:640px) {
     h1 {
         font-size: 2rem;   
     }
+
     p {
         font-size: 1rem;
         margin-top: 2rem;
     }
+
     #title {
         bottom: 3.5rem;
     }
 }
-
-

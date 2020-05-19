@@ -49,4 +49,5 @@ a:hover {
 /* -----Style id's----- */
 #title {
     bottom: 8rem;
+    margin-bottom: -4rem;
 }

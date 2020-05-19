@@ -49,6 +49,50 @@ a:hover {
 /* -----Style id's----- */
 #title {
     bottom: 8rem;
+    margin-bottom: -4.5rem;
+}
+/* -----Style queries----- */
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    h1 {
+        font-size: 3.5rem;   
+    }
+    p {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    #title {
+        bottom: 5.25rem;
+    } 
+
+}
+@media screen and (min-width:640px) and (max-width:767px) {
+    h1 {
+        font-size: 3rem;   
+    }
+    p {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+    
+    #title {
+        bottom: 4.5em;
+    } 
+}
+
+
+
+@media screen and (max-width:640px) {
+    h1 {
+        font-size: 2rem;   
+    }
+    p {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+    #title {
+        bottom: 3.5rem;
+    }
 }
 
 

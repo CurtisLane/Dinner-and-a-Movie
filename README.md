@@ -1,7 +1,7 @@
 # Dinner and a Movie
 
 ## About the Site
-a site where you can look up the specific cusine you want to eat and the genre of movie you wish to see. the site will populate restaurants related to your choice and a movie out in theaters nearby
+A site where you can look up a recipe by an ingredient you have at your home (example: Chicken thighs, Potatoes, Carrots) and the top trending movies of the day/week.
 
 ## Instructions
 * click on left drop down to choose the cusine of food you would like to eat
@@ -10,11 +10,11 @@ a site where you can look up the specific cusine you want to eat and the genre o
 
 
 ## Team Members
-    ### Julian Villalba
-    ### Curtis Lane
-    ### Miguel Cruz
-    ### Jaleesa John
-    ### Ashley Chica
+### Julian Villalba
+### Curtis Lane
+### Miguel Cruz
+### Jaleesa John
+### Ashley Chica
 
 ## Deployed Page Link
 [Dinner and a Movie](https://curtislane.github.io/Dinner-and-a-Movie/)

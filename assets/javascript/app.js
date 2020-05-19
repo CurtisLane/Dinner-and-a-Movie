@@ -10,6 +10,15 @@ $(document).ready(function() {
         dayOrWeek = $(this).text()
     })
 
+    // Input Validation
+    $('#searchInput').on('change', function(){
+        if ($(this).val().length < 2){
+            $('#validation').text('Search must be at least 2 characters')
+        } else {
+            $('#validation').empty()
+        }
+    })
+
     // Listen for click on search button
     $('#searchButton').on('click', function(event){
         event.preventDefault()

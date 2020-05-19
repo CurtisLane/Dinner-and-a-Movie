@@ -51,8 +51,8 @@ a:hover {
     bottom: 8rem;
     margin-bottom: -4.5rem;
 }
-/* -----Style queries----- */
 
+/* -----Media Queries----- */
 @media screen and (min-width:768px) and (max-width:991px) {
     h1 {
         font-size: 3.5rem;   
@@ -79,8 +79,6 @@ a:hover {
         bottom: 4.5em;
     } 
 }
-
-
 
 @media screen and (max-width:640px) {
     h1 {

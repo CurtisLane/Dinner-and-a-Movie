@@ -12,11 +12,13 @@ $(document).ready(function() {
     })
 
     // Input Validation
-    $('#searchInput').on('change', function(){
+    $('#searchInput').on('change paste keyup', function(){
         if ($(this).val().length < 2){
             $('#validation').text('Search must be at least 2 characters')
+            $( "#searchButton" ).prop( "disabled", true );
         } else {
             $('#validation').empty()
+            $( "#searchButton" ).prop( "disabled", false );
         }
     })
 

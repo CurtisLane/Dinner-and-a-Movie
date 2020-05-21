@@ -4,7 +4,7 @@
 A site where you can look up a recipe by an ingredient you have at your home (example: Chicken thighs, Potatoes, Carrots) and the top trending movies of the day/week.
 
 ## Instructions
-* Search for a recipe or ingredient and choose the top trending movies of the day or week and click search. This will bring up the top trending movie of the day/week and recipes containing the ingredient you searched 
+* Search for a recipe or ingredient and choose the top trending movies of the day or week and click search. This will bring up the top trending movies of the day/week and recipes containing the ingredient you searched 
 
 ## Team Members
 ### Julian Villalba

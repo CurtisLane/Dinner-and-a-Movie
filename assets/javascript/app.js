@@ -56,6 +56,7 @@ $(document).ready(function() {
                 let recipeP = $('<p>')
                 
                 // Add attributes to html elements
+                recipeDiv.attr('data-aos', 'fade-right')
                 recipeP.addClass('py-2 text-light')
                 recipeP.text(results[i].recipe.label)
                 recipeDiv.addClass('mt-4 px-3 pt-3 bg-dark rounded')
@@ -97,6 +98,7 @@ $(document).ready(function() {
                 let movieImg = $('<img>')
 
                 // Add attributes to html elements
+                movieDiv.attr('data-aos', 'fade-left')
                 movieDiv.addClass('bg-dark mt-4 rounded')
                 movieLink.attr('href', 'http://www.google.com/search?q=' + results[i].title) // Needs url to google search movie title from api
                 movieLink.attr('target', '_blank')

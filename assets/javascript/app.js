@@ -26,6 +26,10 @@ $(document).ready(function() {
     $('#searchButton').on('click', function(){
         event.preventDefault()
 
+        $('#leftCol').empty()
+        $('#rightCol').empty()
+
+
         // Remove content from display divs on search
         leftCol.empty()
         rightCol.empty()

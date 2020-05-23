@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log('Ready!') // Test js link to html
 
     // Global variables for dom manipulation
     let leftCol = $('#leftCol')
@@ -43,7 +42,6 @@ $(document).ready(function() {
         }).then(function(response){
             
             // Log response, create variable for 'hits' array
-            console.log(response)
             let results = response.hits
 
             // Loop over results array
@@ -86,7 +84,6 @@ $(document).ready(function() {
         }).then(function(response){
 
             // Log respons, make variable for results array
-            console.log(response)
             let results = response.results
 
             // Loop over the results array

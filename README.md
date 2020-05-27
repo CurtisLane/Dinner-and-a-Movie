@@ -31,7 +31,7 @@ A site where you can look up a recipe by an ingredient you have at your home (ex
         * [javascript](./assets/javascript)
             * [app.js](./assets/javascript/app.js)
 
-![picture](./assets/images/Dinner-and-a-movie-image.jpg)
+![picture](assets/Images/Dinner-and-a-movie-image.jpg)
 
 
 
